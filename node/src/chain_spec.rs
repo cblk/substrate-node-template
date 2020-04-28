@@ -79,7 +79,9 @@ pub fn local_testnet_config() -> ChainSpec {
 		"local_testnet",
 		ChainType::Local,
 		|| testnet_genesis(
-			vec![],
+			vec![
+				authority_keys_from_seed("Alice"),
+			],
 			get_account_id_from_seed::<sr25519::Public>("Alice"),
 			vec![
 				get_account_id_from_seed::<sr25519::Public>("Alice"),
