@@ -106,6 +106,21 @@ default-features = false
 package = 'pallet-timestamp'
 version = '2.0.0-alpha.6'
 
+[dependencies.contracts]
+default_features = false
+package = 'pallet-contracts'
+version = '2.0.0-alpha.6'
+
+[dependencies.contracts-primitives]
+default_features = false
+package = 'pallet-contracts-primitives'
+version = '2.0.0-alpha.6'
+
+[dependencies.contracts-rpc-runtime-api]
+default-features = false
+package = 'pallet-contracts-rpc-runtime-api'
+version = '0.8.0-alpha.6'
+
 [dependencies.transaction-payment]
 default-features = false
 package = 'pallet-transaction-payment'
@@ -155,4 +170,7 @@ std = [
     'timestamp/std',
     'transaction-payment/std',
     'template/std',
+    'contracts/std',
+    'contracts-primitives/std',
+    'contracts-rpc-runtime-api/std',
 ]
