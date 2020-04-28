@@ -95,10 +95,14 @@ default-features = false
 package = 'frame-system'
 version = '2.0.0-alpha.6'
 
-[dependencies.template]
+[dependencies.validator-set]
 default-features = false
-package = 'pallet-template'
-path = '../pallets/template'
+package = 'validator-set'
+path = '../pallets/validator-set'
+
+[dependencies.session]
+default-features = false
+package = 'pallet-session'
 version = '2.0.0-alpha.6'
 
 [dependencies.timestamp]
@@ -169,8 +173,9 @@ std = [
     'system/std',
     'timestamp/std',
     'transaction-payment/std',
-    'template/std',
     'contracts/std',
     'contracts-primitives/std',
     'contracts-rpc-runtime-api/std',
+    'session/std',
+    'validator-set/std',
 ]
